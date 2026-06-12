@@ -1,5 +1,5 @@
-const catBtn = document.getElementById("cat-btn");
-const esBtn = document.getElementById("es-btn");
+const langBtn = document.getElementById("lang-btn");
+const langFlag = document.getElementById("lang-flag");
 
 function setLanguage(lang){
 
