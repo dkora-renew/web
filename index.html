@@ -13,72 +13,162 @@
         <img src="img/logo.png" alt="D-KORA">
     </a>
 <nav>
-<a href="#inicio">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#proyectos">Proyectos</a>
-<a href="#contacto">Contacto</a>
+    <a href="#inicio"
+       data-cat="Inici"
+       data-es="Inicio">
+       Inici
+    </a>
+
+    <a href="#servicios"
+       data-cat="Serveis"
+       data-es="Servicios">
+       Serveis
+    </a>
+
+    <a href="#proyectos"
+       data-cat="Projectes"
+       data-es="Proyectos">
+       Projectes
+    </a>
+
+    <a href="#contacto"
+       data-cat="Contacte"
+       data-es="Contacto">
+       Contacte
+    </a>
 </nav>
 </div>
+
+ 
+    <div class="lang-switch">
+        <button id="cat-btn" class="active">CAT</button>
+        <button id="es-btn">ES</button>
+    </div>
 </header>
 
 <section id="inicio" class="hero">
-<section id="inicio" class="hero">
     <div class="hero-overlay">
         <div class="hero-content">
-            <span class="hero-subtitle">PINTURA I FUSTA</span>
+           <span id="hero-subtitle">PINTURA I FUSTA</span>
 
-            <h1>
-                Dona vida als<br>
-                teus <span>espais</span>
-            </h1>
+<h1 id="hero-title">
+    Dona vida als teus <span>espais</span>
+</h1>
 
-            <p>
-                A D-KORA transformem llars i negocis amb acabats de qualitat,
-                cura pels detalls i passió per la nostra feina.
-            </p>
+<p id="hero-text">
+    A D-KORA transformem llars i negocis amb acabats de qualitat,
+    cura pels detalls i passió per la nostra feina.
+</p>
+
+
 
             <div class="hero-buttons">
-                <a href="#servicios" class="btn-primary">VEURE SERVEIS</a>
-                <a href="#contacto" class="btn-secondary">CONTACTA'NS</a>
+               <a id="btn-services" href="#servicios" class="btn-primary">
+    VEURE SERVEIS
+</a>
+
+<a id="btn-contact" href="#contacto" class="btn-secondary">
+    CONTACTA'NS
+</a>
             </div>
         </div>
     </div>
 </section>
-</section>
 
 <section id="servicios" class="section">
 <div class="container">
-<h2>Servicios</h2>
+<h2 id="services-title">Serveis</h2>
+
 <div class="grid">
-<div class="card">Pintura Interior</div>
-<div class="card">Pintura Exterior</div>
-<div class="card">Trabajos de Madera</div>
-<div class="card">Decoración</div>
+    <div class="card"
+         data-cat="Pintura Interior"
+         data-es="Pintura Interior">
+         Pintura Interior
+    </div>
+
+    <div class="card"
+         data-cat="Pintura Exterior"
+         data-es="Pintura Exterior">
+         Pintura Exterior
+    </div>
+
+    <div class="card"
+         data-cat="Treballs de Fusta"
+         data-es="Trabajos de Madera">
+         Treballs de Fusta
+    </div>
+
+    <div class="card"
+         data-cat="Decoració"
+         data-es="Decoración">
+         Decoració
+    </div>
+</div>
 </div>
 </div>
 </section>
 
 <section id="proyectos" class="section alt">
-<div class="container">
-<h2>Proyectos</h2>
-<div class="grid">
-<div class="card">Proyecto 1</div>
-<div class="card">Proyecto 2</div>
-<div class="card">Proyecto 3</div>
-</div>
-</div>
-</section>
+    <div class="container">
 
+        <h2 data-cat="Projectes" data-es="Proyectos">
+            Projectes
+        </h2>
+
+        <div class="grid">
+
+            <div class="card"
+                 data-cat="Projecte 1"
+                 data-es="Proyecto 1">
+                 Projecte 1
+            </div>
+
+            <div class="card"
+                 data-cat="Projecte 2"
+                 data-es="Proyecto 2">
+                 Projecte 2
+            </div>
+
+            <div class="card"
+                 data-cat="Projecte 3"
+                 data-es="Proyecto 3">
+                 Projecte 3
+            </div>
+
+        </div>
+
+    </div>
+</section>
 <section id="contacto" class="section">
-<div class="container">
-<h2>Contacto</h2>
-<form>
-<input placeholder="Nombre">
-<input placeholder="Email">
-<textarea placeholder="Mensaje"></textarea>
-<button type="submit">Enviar</button>
-</form>
-</div>
+    <div class="container">
+
+        <h2 data-cat="Contacte" data-es="Contacto">
+            Contacte
+        </h2>
+
+        <form>
+
+            <input
+                id="nombre"
+                placeholder="Nom">
+
+            <input
+                id="email"
+                placeholder="Email">
+
+            <textarea
+                id="mensaje"
+                placeholder="Missatge"></textarea>
+
+            <button
+                id="btn-enviar"
+                type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
 </section>
 
 <a class="whatsapp" href="https://wa.me/34600000000" target="_blank">WhatsApp</a>
