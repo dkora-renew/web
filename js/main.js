@@ -1,1 +1,1 @@
-// D-KORA
+console.log('Web lista para GitHub Pages');
