@@ -9,6 +9,13 @@ function setLanguage(lang){
                 ? el.dataset.es
                 : el.dataset.cat;
     });
+    if(lang === "es"){
+    langFlag.src = "img/cat.png";
+    langFlag.alt = "Canviar a català";
+}else{
+    langFlag.src = "img/es.png";
+    langFlag.alt = "Cambiar a español";
+}
 
     if(lang === "es"){
 
@@ -39,8 +46,7 @@ function setLanguage(lang){
         document.getElementById("btn-enviar").textContent =
             "Enviar";
 
-        catBtn.classList.remove("active");
-        esBtn.classList.add("active");
+    
 
     }else{
 
@@ -71,14 +77,22 @@ function setLanguage(lang){
         document.getElementById("btn-enviar").textContent =
             "Enviar";
 
-        esBtn.classList.remove("active");
-        catBtn.classList.add("active");
     }
 
     localStorage.setItem("lang", lang);
 }
 
-catBtn.addEventListener("click", () => setLanguage("cat"));
-esBtn.addEventListener("click", () => setLanguage("es"));
+langBtn.addEventListener("click", () => {
+
+    const currentLang =
+        localStorage.getItem("lang") || "cat";
+
+    setLanguage(
+        currentLang === "cat"
+            ? "es"
+            : "cat"
+    );
+
+});
 
 setLanguage(localStorage.getItem("lang") || "cat");
