@@ -272,20 +272,21 @@ button{
 
 @media (max-width:768px){
 
-    .lang-switch{
-        top:8px;
-        right:10px;
-    }
+.lang-switch{
+    top:8px;
+    right:8px;
+}
 
-    #lang-flag{
-        width:12px;
-        height:12px;
-    }
+#lang-flag{
+    width:15px;
+    height:15px;
+}
 
-    .header .container{
-        flex-direction:column;
-        gap:15px;
-    }
+   .header .container{
+    flex-direction:column;
+    gap:15px;
+    position:relative;
+}
 
     nav{
         flex-wrap:wrap;
