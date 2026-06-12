@@ -2,7 +2,19 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;scroll-behavior:smooth}
 .container{width:min(1200px,90%);margin:auto}
-.header{position:sticky;top:0;background:#fff;padding:15px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.header{
+    position:sticky;
+    top:0;
+    background:#fff;
+    padding:10px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+}
+.logo img{
+    height:60px;
+    width:auto;
+    display:block;
+}
 nav a{margin:0 10px;text-decoration:none;color:#0b4ea2}
 .hero{min-height:90vh;display:flex;align-items:center;background:linear-gradient(90deg,#fff,#dcecff)}
 .hero h2{font-size:3rem}
