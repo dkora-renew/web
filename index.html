@@ -1,32 +1,178 @@
-
+```html
 <!DOCTYPE html>
 <html lang="ca">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>D-KORA | Serveis de pintura i fusta</title>
+
 <link rel="stylesheet" href="css/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<meta name="description" content="D-KORA. Especialistes en pintura, restauració i treballs de fusta a Barcelona i rodalies.">
 </head>
+
 <body>
-<header>
-  <h1>D-KORA</h1>
-  <p>Serveis de pintura i fusta</p>
-  <nav>
-    <a href="index.html">Inici</a>
-    <a href="serveis.html">Serveis</a>
-    <a href="projectes.html">Projectes</a>
-    <a href="nosaltres.html">Nosaltres</a>
-    <a href="contacte.html">Contacte</a>
-  </nav>
+
+<header class="header">
+    <div class="logo">
+        <h1>D-KORA</h1>
+        <span>Serveis de pintura i fusta</span>
+    </div>
+
+    <nav>
+        <a href="#serveis">Serveis</a>
+        <a href="#projectes">Projectes</a>
+        <a href="#zones">Zones</a>
+        <a href="#contacte">Contacte</a>
+    </nav>
 </header>
 
 <section class="hero">
-<h2>Dona vida als teus espais</h2>
-<p>Pintura interior, exterior i treballs de fusta.</p>
-<a class="btn" href="contacte.html">Demana pressupost</a>
+
+    <div class="hero-content">
+        <span class="badge">Professionals de confiança</span>
+
+        <h2>
+            Renovem, protegim i transformem els teus espais
+        </h2>
+
+        <p>
+            Especialistes en pintura interior i exterior,
+            restauració de fusta, vernissats, portes,
+            tanques, pèrgoles i molt més.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="https://wa.me/34695128350" target="_blank" class="btn-primary">
+                Demana pressupost
+            </a>
+
+            <a href="#serveis" class="btn-secondary">
+                Veure serveis
+            </a>
+        </div>
+    </div>
+
 </section>
 
-<a class="whatsapp" href="https://wa.me/34695128350" target="_blank">WhatsApp</a>
-<script src="js/main.js"></script>
+<section id="serveis" class="section">
+
+    <h3>Els nostres serveis</h3>
+
+    <div class="cards">
+
+        <div class="card">
+            <h4>🎨 Pintura interior</h4>
+            <p>Habitatges, locals, oficines i reformes.</p>
+        </div>
+
+        <div class="card">
+            <h4>🏠 Pintura exterior</h4>
+            <p>Façanes, comunitats i manteniment.</p>
+        </div>
+
+        <div class="card">
+            <h4>🪵 Restauració de fusta</h4>
+            <p>Portes, finestres, tanques i estructures.</p>
+        </div>
+
+        <div class="card">
+            <h4>🌿 Pèrgoles i exteriors</h4>
+            <p>Protecció i manteniment de fustes.</p>
+        </div>
+
+        <div class="card">
+            <h4>✨ Vernissats</h4>
+            <p>Acabats professionals i duradors.</p>
+        </div>
+
+        <div class="card">
+            <h4>🔨 Projectes a mida</h4>
+            <p>Solucions personalitzades per cada client.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projectes" class="section grey">
+
+    <h3>Projectes recents</h3>
+
+    <p class="subtitle">
+        Properament afegirem fotografies dels nostres treballs.
+    </p>
+
+    <div class="gallery">
+
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+        <div class="gallery-item"></div>
+
+    </div>
+
+</section>
+
+<section id="zones" class="section">
+
+    <h3>Zones de treball</h3>
+
+    <p>
+        Barcelona · Vallès · Maresme · Garraf ·
+        Baix Llobregat · Anoia · Bages · Vilanova · Igualada
+        i rodalies.
+    </p>
+
+</section>
+
+<section id="contacte" class="contact-section">
+
+    <h3>Contacta amb nosaltres</h3>
+
+    <p>Pressupostos sense compromís.</p>
+
+    <div class="contact-grid">
+
+        <div>
+            <h4>📞 Telèfon</h4>
+            <p>695 128 350</p>
+
+            <h4>📧 Email</h4>
+            <p>dkora.renew@gmail.com</p>
+
+            <h4>📸 Instagram</h4>
+            <p>@dkora.renew</p>
+        </div>
+
+        <form action="https://formspree.io/f/TU_ID_FORMULARIO" method="POST">
+
+            <input type="text" name="Nom" placeholder="Nom" required>
+
+            <input type="email" name="Email" placeholder="Email" required>
+
+            <textarea name="Missatge" placeholder="Explica'ns el teu projecte"></textarea>
+
+            <button type="submit">
+                Enviar consulta
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 D-KORA · Serveis de pintura i fusta
+</footer>
+
+<a class="whatsapp" href="https://wa.me/34695128350" target="_blank">
+💬
+</a>
+
 </body>
 </html>
+```
