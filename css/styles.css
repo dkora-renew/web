@@ -209,10 +209,6 @@ nav a:hover{
     background:#f5f7fb;
 }
 
-.icono {
-    width: 64px;
-    height: auto;
-}
 
 /* GRID */
 
@@ -314,8 +310,16 @@ button{
 }
 
 .service-icon{
-    font-size:42px;
     margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.icon{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    display:block;
 }
 
 .service-card h3{
@@ -399,7 +403,16 @@ button{
 }
 
 .service-icon{
-    font-size:36px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.icon{
+    width:36px;
+    height:36px;
+    object-fit:contain;
+    display:block;
 }
 
 .service-card h3{
@@ -409,11 +422,6 @@ button{
 .service-card p{
     font-size:15px;
     line-height:1.6;
-}
-
-    .icono {
-    width: 32px;
-    height: auto;
 }
 
 }
