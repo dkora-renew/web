@@ -357,6 +357,33 @@ button{
     border-radius:16px;
     cursor:pointer;
 }
+.project-card{
+    position:relative;
+}
+
+.arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:10;
+
+    width:40px;
+    height:40px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(255,255,255,.9);
+    cursor:pointer;
+}
+
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
 
 .project-card img{
     width:100%;
