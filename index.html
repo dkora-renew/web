@@ -190,36 +190,78 @@
 
         </div>
 </section>
-<section id="contacto" class="section">
+<section id="contacto" class="contact-section">
+
     <div class="container">
 
-        <h2 data-cat="Contacte" data-es="Contacto">
-            Contacte
-        </h2>
+        <div class="contact-header">
+            <h2>Parlem del teu projecte</h2>
+            <p>
+                Demana pressupost sense compromís.
+                Contacta'ns per WhatsApp, correu electrònic
+                o mitjançant el formulari.
+            </p>
+        </div>
 
-        <form>
+        <div class="contact-grid">
 
-            <input
-                id="nombre"
-                placeholder="Nom">
+            <div class="contact-info">
 
-            <input
-                id="email"
-                placeholder="Email">
+                <div class="contact-card">
+                    <h3>WhatsApp</h3>
+                    <p>Resposta ràpida i directa.</p>
 
-            <textarea
-                id="mensaje"
-                placeholder="Missatge"></textarea>
+                    <a
+                        href="https://wa.me/34600000000"
+                        target="_blank"
+                        class="contact-btn whatsapp-btn">
+                        Escriure per WhatsApp
+                    </a>
+                </div>
 
-            <button
-                id="btn-enviar"
-                type="submit">
-                Enviar
-            </button>
+                <div class="contact-card">
+                    <h3>Correu electrònic</h3>
+                    <p>Envia'ns els detalls del teu projecte.</p>
 
-        </form>
+                    <a
+                        href="mailto:info@dkora.cat"
+                        class="contact-btn">
+                        info@dkora.cat
+                    </a>
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Nom"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    required>
+
+                <input
+                    type="tel"
+                    placeholder="Telèfon">
+
+                <textarea
+                    rows="5"
+                    placeholder="Explica'ns el teu projecte"></textarea>
+
+                <button type="submit">
+                    Sol·licitar pressupost
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
+
 </section>
 
 <a class="whatsapp" href="https://wa.me/34600000000" target="_blank">WhatsApp</a>
