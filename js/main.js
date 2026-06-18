@@ -153,3 +153,30 @@ ${mensaje}`;
     }
 
 });
+
+document.querySelectorAll(".mini-carousel").forEach(carousel => {
+
+    const container =
+        carousel.querySelector(".carousel-images");
+
+    carousel.querySelector(".carousel-next")
+        .addEventListener("click", () => {
+
+            container.scrollBy({
+                left: 365,
+                behavior: "smooth"
+            });
+
+        });
+
+    carousel.querySelector(".carousel-prev")
+        .addEventListener("click", () => {
+
+            container.scrollBy({
+                left: -365,
+                behavior: "smooth"
+            });
+
+        });
+
+});
