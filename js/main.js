@@ -154,28 +154,40 @@ ${mensaje}`;
 
 });
 
-document.querySelectorAll(".mini-carousel").forEach(carousel => {
+document.querySelectorAll(".project-card").forEach(card => {
 
-    const container =
-        carousel.querySelector(".carousel-images");
+    const img = card.querySelector(".project-image");
 
-    carousel.querySelector(".carousel-next")
+    if(!img) return;
+
+    const images =
+        img.dataset.images.split(",");
+
+    let index = 0;
+
+    card.querySelector(".next")
         .addEventListener("click", () => {
 
-            container.scrollBy({
-                left: 365,
-                behavior: "smooth"
-            });
+            index++;
+
+            if(index >= images.length){
+                index = 0;
+            }
+
+            img.src = images[index];
 
         });
 
-    carousel.querySelector(".carousel-prev")
+    card.querySelector(".prev")
         .addEventListener("click", () => {
 
-            container.scrollBy({
-                left: -365,
-                behavior: "smooth"
-            });
+            index--;
+
+            if(index < 0){
+                index = images.length - 1;
+            }
+
+            img.src = images[index];
 
         });
 
