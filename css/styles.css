@@ -475,6 +475,51 @@ button{
     cursor:pointer;
 }
 
+.project-category{
+    margin-bottom:60px;
+}
+
+.project-category h3{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.mini-carousel{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.carousel-images{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    flex:1;
+}
+
+.carousel-images::-webkit-scrollbar{
+    display:none;
+}
+
+.carousel-images img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:16px;
+    flex-shrink:0;
+}
+
+.carousel-prev,
+.carousel-next{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width:768px){
