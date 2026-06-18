@@ -39,7 +39,10 @@ function setLanguage(lang){
 
         document.getElementById("email").placeholder =
             "Correo electrónico";
-
+        
+        document.getElementById("telefono").placeholder =
+            "Teléfono";
+        
         document.getElementById("mensaje").placeholder =
             "Mensaje";
 
@@ -71,6 +74,9 @@ function setLanguage(lang){
         document.getElementById("email").placeholder =
             "Correu electrònic";
 
+        document.getElementById("telefono").placeholder =
+            "Telèfon";
+
         document.getElementById("mensaje").placeholder =
             "Missatge";
 
@@ -96,3 +102,54 @@ langBtn.addEventListener("click", () => {
 });
 
 setLanguage(localStorage.getItem("lang") || "cat");
+
+/* FORMULARIO WHATSAPP */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const form = document.getElementById("contact-form");
+
+    if(form){
+
+        form.addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const email = document.getElementById("email").value;
+            const telefono = document.getElementById("telefono").value;
+            const mensaje = document.getElementById("mensaje").value;
+
+            const lang = localStorage.getItem("lang") || "cat";
+
+            const texto = lang === "es"
+            ? `Hola D-KORA,
+
+Nombre: ${nombre}
+Email: ${email}
+Teléfono: ${telefono}
+
+Proyecto:
+${mensaje}`
+            : `Hola D-KORA,
+
+Nom: ${nombre}
+Email: ${email}
+Telèfon: ${telefono}
+
+Projecte:
+${mensaje}`;
+
+            const url =
+                "https://wa.me/34695128359?text=" +
+                encodeURIComponent(texto);
+
+            window.open(url, "_blank");
+
+            form.reset();
+
+        });
+
+    }
+
+});
