@@ -160,10 +160,38 @@ document.querySelectorAll(".project-card").forEach(card => {
 
     if(!img) return;
 
-    const images =
-        img.dataset.images.split(",");
+    const images = img.dataset.images.split(",");
 
     let index = 0;
+
+    const dotsContainer = card.querySelector(".dots");
+
+    images.forEach((_, i) => {
+
+        const dot = document.createElement("span");
+
+        dot.classList.add("dot");
+
+        if(i === 0){
+            dot.classList.add("active");
+        }
+
+        dotsContainer.appendChild(dot);
+
+    });
+
+    const dots = dotsContainer.querySelectorAll(".dot");
+
+    function updateCarousel(){
+
+        img.src = images[index];
+
+        dots.forEach(dot =>
+            dot.classList.remove("active")
+        );
+
+        dots[index].classList.add("active");
+    }
 
     card.querySelector(".next")
         .addEventListener("click", () => {
@@ -174,7 +202,7 @@ document.querySelectorAll(".project-card").forEach(card => {
                 index = 0;
             }
 
-            img.src = images[index];
+            updateCarousel();
 
         });
 
@@ -187,7 +215,7 @@ document.querySelectorAll(".project-card").forEach(card => {
                 index = images.length - 1;
             }
 
-            img.src = images[index];
+            updateCarousel();
 
         });
 
