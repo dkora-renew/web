@@ -209,6 +209,11 @@ nav a:hover{
     background:#f5f7fb;
 }
 
+.icono {
+    width: 64px;
+    height: auto;
+}
+
 /* GRID */
 
 .grid{
@@ -405,6 +410,12 @@ button{
     font-size:15px;
     line-height:1.6;
 }
+
+    .icono {
+    width: 32px;
+    height: auto;
+}
+
 }
 @media (max-width:1024px){
 
